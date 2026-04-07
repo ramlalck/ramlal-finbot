@@ -1,6 +1,9 @@
 # FinBot — Analyst Research Assistant
 
+**🚀 Live Demo: [https://witty-stone-0e9fa850f.6.azurestaticapps.net](https://witty-stone-0e9fa850f.6.azurestaticapps.net)**
+
 FinBot is a full-stack financial research tool built with FastAPI and Next.js, deployed on Azure. It uses LangGraph and Groq to produce structured analyst briefs for stocks.
+
 
 ## Project Structure
 
