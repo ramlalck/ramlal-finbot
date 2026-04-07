@@ -11,7 +11,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://ramlal-finbot-app.azurestaticapps.net",  # ← replace with your actual SWA frontend URL
+        "https://witty-stone-0e9fa850f.azurestaticapps.net",
+        "https://witty-stone-0e9fa850f.6.azurestaticapps.net",
     ],
     allow_credentials=True,
     allow_methods=["*"],
