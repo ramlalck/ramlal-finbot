@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(CLAUDE_CONFIG_DIR=~/.claude-ramlal-mediakind claude login)",
+      "Read(//c/Users/Ramlal.Krishnamoorth/.claude/**)",
+      "Read(//c/Users/Ramlal.Krishnamoorth/.claude-ramlal-mediakind/**)",
+      "Bash(cp ~/.claude/settings.json ~/.claude-ramlal-mediakind/settings.json)",
+      "Bash(cp ~/.claude/mcp.json ~/.claude-ramlal-mediakind/mcp.json)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "sqlite",
+    "playwright-mcp-microsoft"
+  ]
+}

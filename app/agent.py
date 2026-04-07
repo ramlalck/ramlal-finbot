@@ -42,7 +42,6 @@ llm = ChatGroq(
     model=settings.groq_model,
     temperature=0,
     max_tokens=None,
-    reasoning_format="parsed",
     timeout=None,
     max_retries=2,
 )
@@ -50,6 +49,7 @@ llm = ChatGroq(
 Path(settings.sqlite_db_path).parent.mkdir(parents=True, exist_ok=True)
 conn = sqlite3.connect(settings.sqlite_db_path, check_same_thread=False)
 checkpointer = SqliteSaver(conn)
+checkpointer.setup()
 
 agent = create_agent(
     llm,

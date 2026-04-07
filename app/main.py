@@ -5,12 +5,14 @@ from app.agent import run_agent
 from dotenv import load_dotenv
 
 _ = load_dotenv()
-app = FastAPI(title="FinBot API")
+app = FastAPI(title="Ramlal FinBot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000",
-    "https://finbot-api.azurewebsites.net"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://ramlal-finbot-app.azurestaticapps.net",  # ← replace with your actual SWA frontend URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

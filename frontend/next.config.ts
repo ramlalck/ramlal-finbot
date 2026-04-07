@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Azure SWA handles Next.js SSR natively — no output override needed */
 };
 
 export default nextConfig;
