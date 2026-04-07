@@ -16,7 +16,6 @@ dependencies = [
     "pydantic>=2.12.5",
     "pydantic-settings>=2.13.1",
     "python-dotenv>=1.2.2",
-    "serpapi>=0.1.6",
     "uvicorn[standard]>=0.42.0",
     "wikipedia>=1.4.0",
     "yfinance>=1.2.0",
