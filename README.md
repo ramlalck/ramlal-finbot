@@ -19,9 +19,21 @@ The backend is hosted at `https://ramlal-finbot-api.azurewebsites.net`.
 - **Deployment**: Manual via `az webapp up --name ramlal-finbot-api`
 
 ### ⚛️ Frontend (Azure Static Web Apps)
-The frontend is hosted at `https://ramlal-finbot-app.azurestaticapps.net`.
+The frontend is hosted at `https://witty-stone-0e9fa850f.6.azurestaticapps.net`.
 - **Framework**: Next.js 15
 - **Deployment**: **Automatic via GitHub Actions**. Any change pushed to the `main` branch of this repository will trigger a fresh build and deployment.
+
+## Azure Cost Management
+The Frontend (Static Web App) operates on the Free Tier ($0). However, the Backend (App Service) incurs hourly costs. When you are not using the application, run these Azure CLI commands to save money:
+
+- **To Stop the Backend (Save Costs):**
+  ```powershell
+  az webapp stop --name ramlal-finbot-api --resource-group ramlal_ck_rg_9664
+  ```
+- **To Start the Backend Again:**
+  ```powershell
+  az webapp start --name ramlal-finbot-api --resource-group ramlal_ck_rg_9664
+  ```
 
 ## How to Share & Run
 If someone wants to run this project:
